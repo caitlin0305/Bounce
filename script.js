@@ -3,6 +3,7 @@
  * de code in deze functie wordt één keer uitgevoerd door
  * de p5 library, zodra het spel geladen is in de browser
  */ 
+bal = new Bal; 
 
 var x = 50;
 var y = 50;
@@ -38,4 +39,9 @@ function draw() {
   if (y == 720) {
     speedy = speedy * - 1;
   }
+}
+
+function draw() {
+  bal.show();
+  bal.update();
 }

@@ -14,8 +14,8 @@ function setup() {
   for(var i = 0; i < 25; i++) {
     var randomX = random(50,1230);
     var randomY = random(50, 670);
-    var randomspeedX = random(-5, 51);
-    var randomspeedy = random(-5, 51);
+    var randomspeedX = random(-5, 5);
+    var randomspeedy = random(-5, 5);
   
     var bal = new Bal(randomX, randomY, randomspeedX, randomspeedY);
   

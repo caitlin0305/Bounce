@@ -15,12 +15,15 @@ function setup() {
     var randomX = random(50,1230);
     var randomY = random(50, 670);
     var randomspeedX = random(-5, 5);
-    var randomspeedy = random(-5, 5);
+    var randomspeedY = random(-5, 5);
   
-    var bal = new Bal(randomX, randomY, randomspeedX, randomspeedY);
+    var bal = new Bal (randomX, randomY, randomspeedX, randomspeedY);
   
     ballen.push(bal);
   }
+
+  var superbal = new Superbal(600, 400, 10, 10);
+  ballen.push (superbal);
 }
 
 

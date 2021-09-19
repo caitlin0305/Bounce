@@ -22,8 +22,12 @@ function setup() {
     ballen.push(bal);
   }
 
-  var superbal = new Superbal(600, 400, 10, 10);
+  var superbal = new Superbal(400, 300, 10, 10);
   ballen.push (superbal);
+
+  var nummerbal = new nummer(100, 100, 10, 10);
+  ballen.push (nummerbal);
+  
 }
 
 
@@ -36,6 +40,7 @@ function setup() {
 function draw() {
 
   background('blue');
+
   for(var i = 0; i < ballen.length; i++) {
    ballen[i].show();
    ballen[i].update();

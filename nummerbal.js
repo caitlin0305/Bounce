@@ -1,27 +1,19 @@
-class nummer extends Bal {
-    x;
-    y;
-    speedX;
-    speedY;
+class NummerBal extends Bal {
     nummer;
 
     constructor (_x, _y, _speedX, _speedY, _nummer) {
-       this.x = _x;
-       this.y = _y;
-       this.speedX = _speedX;
-       this.speedY = _speedY;
+        super(_x, _y, _speedX, _speedY);
+        this.nummer = _nummer;
     }
 
     show() {
-        fill (255, 0, 0);
-        ellipse(this.x, this.y, 50, 50);
+        fill (255, 0, 255);
+        ellipse(this.x, this.y, 100, 100);
 
-        fill(255, 255, 255);
-        textSize(20);
-        textSize(this.nummer, this.x, this.y);
+        fill(255, 255, 0);
+        textSize(30);
+        text("9", this.x, this.y);
     }
 
-    update() {
 
-    }
 }
